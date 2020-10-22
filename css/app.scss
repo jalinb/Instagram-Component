@@ -1,0 +1,33 @@
+.bg-gray {
+  background-color: #3b3b3a !important;
+}
+.instagram-single {
+  margin-bottom: 30px;
+  width: 260px;
+  height: 260px;
+  &:hover .caption {
+    opacity: 1;
+  }
+  &:hover .instagram-image {
+    opacity: 0.1;
+  }
+}
+.instagram-image {
+  background-size: cover;
+  background-position: 50%;
+  opacity: 1;
+  transition: 0.7s;
+}
+.caption {
+  color: #fff;
+  line-height: 0.5em;
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+  z-index: 2;
+  i {
+    font-size: 3em;
+    padding-bottom: 10px;
+  }
+}
